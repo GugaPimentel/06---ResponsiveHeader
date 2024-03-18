@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(24 24 27);
+}
+
+header {
+  width: 100%;
+  height: 5rem;
+  background-color: rgb(39 39 42);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo-container i {
+  color: white;
+  font-size: 2rem;
+}
+
+.logo-container span {
+  color: white;
+  font-size: 1.75rem;
+}
+
+.links-container {
+  display: flex;
+  gap: 35px;
+  font-size: 1rem;
+}
+
+.links-container a {
+  text-decoration: none;
+  color: white;
+}
+
+.mobile-menu {
+  width: 100%;
+  padding: 1rem;
+  background-color: rgb(39 39 42);
+
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.active {
+  transform: rotate(90deg);
+}
+
+#open-menu-mobile {
+  transition: all .3s;
+}
+
+.hide {
+  display: none;
+}
+
+header button {
+  background-color: transparent;
+  display: none;
+  border: 0;
+  outline: 0;
+  color: white;
+  font-weight: 800;
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.links-container i {
+  font-size: 1.5rem;
+  display: none;
+  color: white;
+}
+
+@media screen and (max-width: 500px) {
+  .links-container a{
+    display: none;
+  }
+  .links-container i {
+    font-size: 1.5rem;
+    color: white;
+    display: block;
+  }
+}
